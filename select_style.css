@@ -1,0 +1,77 @@
+﻿.custom-select-container, .custom-select-name {
+    border: 1px solid #d3d3d3;
+    float: left;
+    background: #f8f8f8;
+    font-family: arial,sans-serif;
+}
+.custom-select-name {
+    position:relative;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+    color: #333;
+}
+
+.custom-select-name .sprit {
+	margin-left:2px;
+	vertical-align: middle; 
+	display: inline-block;
+	border-top: 4px solid; 
+	border-right: 4px solid transparent; 
+	border-left: 4px solid transparent;	
+}
+
+.custom-select-name.active {
+	background: #e9e9e9;
+}
+
+.custom-select-container {
+    margin-top: 23px;
+    clear: both;
+    position: absolute;
+    display: none;
+    max-height:210px;
+    z-index:10;
+overflow: auto;
+}
+
+.custom-select-element {
+    font-family: arial,sans-serif;
+    font-size: 13px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.custom-select-element.active {
+	font-weight: bold;
+}
+
+.custom-select-element:hover {
+    background-color: #222;
+	color: #fff;
+}
+
+.custom-select-element span {
+	margin-top: 7px;
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+	background-color:#E8E8E8 ;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color:#C0C0C0;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
